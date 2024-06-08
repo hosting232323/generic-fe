@@ -39,7 +39,7 @@ const isLeftDesktopAligned = computed(() => (content.orientationDesktop || defau
 const isTopMobileAligned = computed(() => (content.orientationMobile || defaultMobileOrientation) === 'top');
 
 const isLeftAligned = computed(() => {
-    if (isMobile.value) return isTopMobileAligned.value;
-    else return isLeftDesktopAligned.value;
+	if (isMobile.value) return isTopMobileAligned.value;
+	else return isLeftDesktopAligned.value;
 });
 </script>
