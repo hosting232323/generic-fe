@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <UpArrow />
     <AppBar />
     <View />
     <Footer />
@@ -8,7 +7,6 @@
 </template>
 
 <script setup>
-  import UpArrow from './UpArrow.vue';
   import View from './View.vue';
   import AppBar from './AppBar.vue';
   import Footer from './Footer.vue';

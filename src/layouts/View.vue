@@ -1,6 +1,9 @@
 <template>
   <v-main :style="{ backgroundColor: data.info.secondaryColor }">
     <router-view />
+    <a href="https://www.instagram.com/dicarne_showroom/">
+      <v-btn icon="mdi-instagram" :color="data.info.primaryColor" class="fixed-btn" size="x-large" />
+    </a>
   </v-main>
 </template>
 
@@ -18,3 +21,11 @@
     document.body.appendChild(script); 
   }
 </script>
+
+<style scoped>
+  .fixed-btn {
+    position: fixed;
+    bottom: 64px;
+    right: 16px;
+  }
+</style>
