@@ -6,7 +6,7 @@
         </v-col>
         <v-col cols="12" md="6">
             <v-sheet style="background-color: transparent;">
-                <p v-if="content.title" class="text-h3 font-weight-black" :style="{ color: info.primaryColor + ' !important' }" v-html="getText(content.title)" />
+                <p v-if="content.title" class="text-h3" :style="{ color: info.primaryColor + '!important', fontSize: '32px !important', fontWeight: '500' }" v-html="getText(content.title)" />
                 <br />
                 <p v-if="content.subtitle" class="text-subtitle-1 font-weight-black" v-html="getText(content.subtitle) + '<br>'" />
                 <p v-if="content.description" v-html="getText(content.description)" />
@@ -39,7 +39,7 @@ const isLeftDesktopAligned = computed(() => (content.orientationDesktop || defau
 const isTopMobileAligned = computed(() => (content.orientationMobile || defaultMobileOrientation) === 'top');
 
 const isLeftAligned = computed(() => {
-    if (isMobile.value) return isTopMobileAligned.value;
-    else return isLeftDesktopAligned.value;
+	if (isMobile.value) return isTopMobileAligned.value;
+	else return isLeftDesktopAligned.value;
 });
 </script>
