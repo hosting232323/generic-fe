@@ -1,110 +1,91 @@
 {
-  "addOn": [
-    "Chatty",
-    "VirtualTour"
-  ],
+  "info": {
+    "menuHomeLink": false,
+    "name": "Colasanto Luigi",
+	  "iva": "05089680721",	
+    "primaryColor": "#D33F49",
+    "secondaryColor": "#F2E8C4"
+  },
   "components": [
     {
+      "type": "gallery",
       "content": [
-        "https://fastsitepictures.s3.eu-north-1.amazonaws.com/Sviluppatoredisitiwebgallery0.png",
-        "https://fastsitepictures.s3.eu-north-1.amazonaws.com/Sviluppatoredisitiwebgallery1.png"
-      ],
-      "menu": "Galleria",
-      "type": "gallery"
+        "/gallery1.jpeg",
+        "/gallery2.jpeg",
+		    "/gallery3.jpeg"
+      ]
     },
     {
+      "type": "iconText"
+    },
+    {
+      "type": "line"
+    },
+    {
+      "type": "services",
+      "menu": "servizi",
       "content": [
         {
-          "description": "Creiamo siti web unici e personalizzati per ogni cliente, garantendo un'immagine distintiva e professionale.",
-          "image": "https://fastsitepictures.s3.eu-north-1.amazonaws.com/Sviluppatoredisitiwebadvantages0.png",
-          "name": "Design Personalizzato"
+          "description": "Desideri goderti la qualità e il gusto dei nostri prodotti senza muoverti da casa? Con il nostro servizio di consegna a domicilio, puoi farlo facilmente! Scegli i tuoi tagli preferiti di carne bovina, suina, di agnello, polli, tacchini, salumi e formaggi stagionati direttamente dal comfort del tuo divano e lascia il resto a noi. Il nostro team dedicato si impegna a garantire che i tuoi prodotti arrivino freschi e pronti da gustare, senza alcuna complicazione. Sperimenta la comodità della consegna a domicilio e assicurati di avere sempre a portata di mano i migliori sapori della nostra macelleria.",
+          "name": "Consegna a Domicilio: Il Gusto Arriva Direttamente a Casa Tua"
         },
         {
-          "description": "Implementiamo le migliori pratiche SEO per migliorare la visibilità online dei siti web che sviluppiamo, garantendo un posizionamento migliore sui motori di ricerca.",
-          "image": "https://fastsitepictures.s3.eu-north-1.amazonaws.com/Sviluppatoredisitiwebadvantages1.png",
-          "name": "SEO Ottimizzato"
-        },
-        {
-          "description": "I siti web che progettiamo sono completamente responsive, garantendo un'esperienza utente ottimale su tutti i dispositivi, come desktop, tablet e smartphone.",
-          "image": "https://fastsitepictures.s3.eu-north-1.amazonaws.com/Sviluppatoredisitiwebadvantages2.png",
-          "name": "Responsive Design"
-        },
-        {
-          "description": "Ci assicuriamo che i siti web siano ottimizzati per la velocità di caricamento, migliorando l'esperienza dell'utente e favorendo il posizionamento sui motori di ricerca.",
-          "image": "https://fastsitepictures.s3.eu-north-1.amazonaws.com/Sviluppatoredisitiwebadvantages3.png",
-          "name": "Velocità di Caricamento Ottimale"
+          "description": "Aiuto nella selezione di tagli speciali di carne e consigli sulla preparazione per risultati culinari eccellenti.",
+          "name": "Assistenza nella Scelta e Preparazione di Tagli Speciali"
         }
-      ],
+      ]
+    },
+    {
+      "type": "line"
+    },
+    {
+      "type": "advantages",
       "menu": "Vantaggi",
-      "type": "advantages"
-    },
-    {
-      "type": "line"
-    },
-    {
       "content": [
         {
-          "description": "Creazione di un sito web vetrina personalizzato per presentare i tuoi servizi e prodotti in modo professionale e accattivante.",
-          "name": "Sito Web Vetrina"
+          "description": "La nostra macelleria è molto più di un semplice punto vendita: è il risultato di una lunga storia di passione e dedizione familiare che ha inizio nel lontano 1960, quando mio padre aprì le porte per la prima volta.<br>Da allora, generazione dopo generazione, ci siamo impegnati a offrire solo il meglio della carne e dei salumi ai nostri clienti.<br>Dopo aver trascorso oltre 50 anni all'interno di queste mura, ho personalmente sperimentato ogni aspetto della macelleria, facendo la gavetta e apprendendo i segreti del mestiere con amore e dedizione.<br>Ogni pezzo di carne che trovi nei nostri scaffali porta con sé la nostra storia, la nostra esperienza e il nostro impegno per la qualità.<br><i>Grazie per averci scelto e per essere parte della nostra storia.</i>",
+          "image": "/advantages2.jpg",
+          "name": "Tradizione e Qualità dal 1960"
         },
         {
-          "description": "Realizzazione di un sito web e-commerce completo di funzionalità di shopping online, gestione dei pagamenti e catalogo prodotti.",
-          "name": "Sito Web E-commerce"
+          "description": "Scopri la versatilità e la freschezza del nostro pollo e dei suoi tagli prelibati.<br>Dai succosi petti alle gustose cosce, dalle ali croccanti ai saporiti preparati, il nostro pollo è sempre una scelta vincente per ogni occasione culinaria.<br>Preparato con cura e attenzione, il nostro pollo garantisce una deliziosa esperienza di gusto ogni volta.<br>Approfitta ora del nostro servizio a domicilio e porta a casa la freschezza e la qualità del nostro pollo direttamente sulla tua tavola.",
+          "image": "https://www.chiappinellicarni.it/it/wp-content/uploads/2019/02/Le-vendite-della-carne-di-pollo-sorpassano-quelle-del-bovino-1-1.jpg",
+          "name": "Il Pollo: Un'Esperienza di Gusto Unici"
         },
         {
-          "description": "Analisi e ottimizzazione del sito web per i motori di ricerca al fine di migliorare la visibilità online e aumentare il traffico organico.",
-          "name": "Ottimizzazione SEO"
+          "description": "La nostra selezione di carne bovina è il fiore all'occhiello della nostra macelleria, rappresentando un'esperienza culinaria senza paragoni.<br>Proveniente da vitelli da latte di prima scelta, la nostra carne bovina è sinonimo di tenerezza, gusto e qualità superiore.<br>Dai pregiati tagli di filetto alle succulente bistecche di controfiletto, dalle gustose costine alle tenerissime scaloppine, ogni pezzo di carne bovina è selezionato e preparato con cura per garantire una soddisfazione culinaria senza precedenti.<br>Approfitta ora della nostra vasta selezione di tagli e preparati di carne bovina e scopri il vero significato di eccellenza gastronomica.",
+          "image": "/advantages1.jpg",
+          "name": "Eccellenza Bovina: Gusto e Qualità Unici"
         },
         {
-          "description": "Aggiornamento regolare dei contenuti del sito web, inclusi testi, immagini e prodotti, per garantire un'esperienza utente sempre fresca.",
-          "name": "Gestione Contenuti"
-        },
-        {
-          "description": "Creazione di soluzioni web personalizzate e innovative in base alle esigenze specifiche del cliente per ottenere un sito web unico e funzionale.",
-          "name": "Sviluppo Web Personalizzato"
+          "description": "La nostra carne suina è un'ode al gusto e alla tradizione culinaria, offrendo una vasta gamma di tagli e preparati che soddisferanno ogni desiderio gastronomico.<br>Dai succulenti arrosti alle gustose salsicce, dalle tenere costolette alle aromatiche lonze, ogni pezzo di carne suina porta con sé un sapore unico e irresistibile.<br>Oltre ai tagli classici, offriamo una varietà di preparati artigianali, come salsicce fresche e stagionate, salumi tradizionali e specialità regionali, per portare a casa un pezzo di autentica tradizione culinaria.<br>Scopri la nostra selezione di carne suina e delizia il tuo palato con il meglio che la nostra macelleria ha da offrire.",
+          "image": "https://3.bp.blogspot.com/-50kFgy5HmMw/VDaeUxGG1WI/AAAAAAAAADs/936efZS6Nro/s1600/tagli%2Bsuino.jpg",
+          "name": "Delizie suine: Esplora il Mondo di Gusto della Nostra Carne Suina"
         }
-      ],
-      "menu": "Servizi",
-      "type": "services"
+      ]
     },
     {
       "type": "line"
     },
     {
-      "content": {
-        "button": "Cliccami!",
-        "description": "Offriamo servizi di sviluppo web personalizzati per soddisfare le esigenze dei nostri clienti. Dalla creazione di siti web statici alla realizzazione di piattaforme web complesse e scalabili, garantiamo soluzioni di alta qualità e user-friendly.",
-        "image": "https://fastsitepictures.s3.eu-north-1.amazonaws.com/Sviluppatoredisitiwebbase0.png",
-        "orientation": "right",
-        "subtitle": "Da siti statici a piattaforme complesse",
-        "title": "Servizi di Sviluppo Web",
-        "url": "https://fastsitepictures.s3.eu-north-1.amazonaws.com/Sviluppatoredisitiwebbase0.png"
-      },
-      "menu": "Sezione doppia",
-      "type": "dualSection"
-    },
-    {
-      "content": {
-        "Email": "giovanni.colasanto@fastsite.it",
-        "Phone": "+39 347 876 8340"
-      },
+      "type": "contacts",
       "menu": "Contatti",
-      "type": "contacts"
+      "content": {
+        "Address": "Piazza Principe di Napoli, 7<br>Molfetta 70056 BA",
+        "Mail": "macelleriacolasanto@libero.it",
+        "Phone": "+39 080 397 4062",
+        "Whatsapp": "+39 338 842 3405"
+      }
     },
     {
+      "type": "map",
       "content": {
         "coordinates": [
-          16.882818,
-          41.09665
+          16.598575,
+		      41.200482
         ],
-        "zoom": 9
-      },
-      "type": "map"
+        "zoom": 16
+      }
     }
-  ],
-  "info": {
-    "name": "FastSite",
-    "primaryColor": "#2F4F4F",
-    "secondaryColor": "#D2B48C"
-  }
+  ]
 }
