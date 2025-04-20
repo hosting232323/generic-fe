@@ -44,7 +44,7 @@ const info = data.value.info;
 useHead({
   title: 'Home Page',
   meta: [
-    { name: 'Fast Site', content: 'This is the home page' }
+    { name: 'Enoteca DiVinbacco', content: 'This is the home page' }
   ]
 });
 </script>
