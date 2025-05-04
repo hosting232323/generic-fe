@@ -14,7 +14,6 @@
     <v-app-bar-title>
       <div v-if="info.logo" class="d-flex align-center">
         <img :src="info.logo" alt="Logo" class="app-logo">
-        <b style="margin-left: 10px;">{{ info.name }}</b>
       </div>
       <b v-else>{{ info.name }}</b>
     </v-app-bar-title>
@@ -27,7 +26,6 @@
     <v-app-bar-title>
       <div v-if="info.logo" class="d-flex align-center">
         <img :src="info.logo" alt="Logo" class="app-logo">
-        <b style="margin-left: 10px;">{{ info.name }}</b>
       </div>
       <b v-else>{{ info.name }}</b>
     </v-app-bar-title>
@@ -39,7 +37,6 @@
       <Cart v-if="cartActive && getCartQuantity != 0"></Cart>
       <Language v-if="multilingualActive" />
     </div>
-
   </v-app-bar>
 </template>
 
