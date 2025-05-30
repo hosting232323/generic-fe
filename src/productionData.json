@@ -3,7 +3,10 @@
     {
       "content": {
         "images": [
-          "gallery/3.jpeg",
+          {
+            "desktop": "gallery/3.jpeg",
+            "mobile": "gallery/7.jpeg"
+          },
           "gallery/1.jpeg",
           "gallery/2.jpeg",
           "gallery/5.jpeg",
@@ -76,7 +79,7 @@
   "info": {
     "iva": "07308830723",
     "logo": "logo.png",
-    "name": "Enoteca DiVinbacco",
+    "name": "Enoteca DiVinBacco",
     "primaryColor": "#000000",
     "secondaryColor": "#B22222",
     "socialBubbles": [

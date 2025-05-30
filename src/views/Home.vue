@@ -42,9 +42,12 @@ const sections = data.value.components;
 const info = data.value.info;
 
 useHead({
-  title: 'Home Page',
+  title: 'Enoteca DiVinBacco',
   meta: [
-    { name: 'Enoteca DiVinbacco', content: 'This is the home page' }
+    {
+      name: 'description',
+      content: 'Enoteca DiVinBacco: Vini sfusi, servizi personalizzati e una selezione accurata nel cuore di Bisceglie.'
+    }
   ]
 });
 </script>

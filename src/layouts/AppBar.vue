@@ -13,7 +13,7 @@
     <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
     <v-app-bar-title>
       <div v-if="info.logo" class="d-flex align-center">
-        <img :src="info.logo" alt="Logo" class="app-logo">
+        <img :src="info.logo" alt="Enoteca DiVinBacco" class="app-logo">
         <b style="margin-left: 10px;">{{ info.name }}</b>
       </div>
       <b v-else>{{ info.name }}</b>
@@ -26,7 +26,7 @@
     <v-app-bar-nav-icon v-if="isMobile" @click.stop="drawer = !drawer" />
     <v-app-bar-title>
       <div v-if="info.logo" class="d-flex align-center">
-        <img :src="info.logo" alt="Logo" class="app-logo">
+        <img :src="info.logo" alt="Enoteca DiVinBacco" class="app-logo">
         <b style="margin-left: 10px;">{{ info.name }}</b>
       </div>
       <b v-else>{{ info.name }}</b>
