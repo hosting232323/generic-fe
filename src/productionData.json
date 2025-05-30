@@ -19,21 +19,23 @@
     },
     {
       "content": {
+        "text": "Benvenuti da DiVinBacco, un luogo dove la passione per il vino incontra l'esperienza. Guidata da Antonella e Isabella (con 25 anni di esperienza nel settore) offriamo una selezione di vini scelti con cura e consigli personalizzati. Ogni giorno, mettiamo passione, competenza e cuore in tutto ciò che facciamo, perché per noi ogni cliente è parte della famiglia. Scopri il piacere di un'esperienza unica, dove ogni bottiglia racconta una storia e ogni consiglio nasce"
+      },
+      "menu": "Chi Siamo",
+      "type": "text"
+    },
+    {
+      "content": {
         "advantages": [
           {
-            "description": "A guidare l’attività ci sono Antonella e Isabella, due donne con 25 anni di esperienza nel settore, che mettono ogni giorno passione, competenza e cuore in tutto ciò che fanno.",
-            "image": "advantages/1.png",
-            "name": "Chi Siamo?"
-          },
-          {
-            "description": "Si pone grande attenzione alla selezione dei prodotti, dando priorità alle realtà Presenti sul territorio locale e nazionale. Scegliamo Aziende che puntano sull' eccellenza del risultato, all'autenticità del processo e sulla sostenibilità . L'obiettivo è portare sulla tavola dei nostri clienti, non solo gusto e raffinatezza ma viaggi sensoriali che abbiano anche un ottimo rapporto qualità-prezzo, promuovendo una cultura del vino che valorizza la sostanza più che l'apparenza .",
+            "description": "Da Enoteca DiVinBacco, si pone grande attenzione alla selezione dei prodotti, dando priorità alle realtà presenti sul territorio locale e nazionale. Scegliamo Aziende che puntano sull' eccellenza del risultato, all'autenticità del processo e sulla sostenibilità. L'obiettivo è portare sulla tavola dei nostri clienti, non solo gusto e raffinatezza ma viaggi sensoriali che abbiano anche un ottimo rapporto qualità-prezzo, promuovendo una cultura del vino che valorizza la sostanza più che l'apparenza.",
             "image": "advantages/2.png",
-            "name": "La Nostra Selezione"
+            "name": "<strong>La Nostra Selezione</strong>"
           },
           {
             "description": "Forniamo consulenza personalizzata per aiutare i clienti a scegliere i prodotti più adatti alle loro esigenze, promuovendo una relazione di fiducia e fedeltà.",
             "image": "advantages/3.png",
-            "name": "Consulenza Personalizzata"
+            "name": "<strong>Consulenza Personalizzata</strong>"
           }
         ]
       },
