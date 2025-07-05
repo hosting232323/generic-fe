@@ -1,80 +1,123 @@
 <template>
   <v-row>
-    <v-col cols="3">
-      <div class="icons-container">
-        <br />
+    <v-col cols="12" md="3" class="filters-container">
+      <v-card class="pa-4" elevation="2">
+        <h3 class="text-h6 font-weight-bold mb-2">Categorie</h3>
         <v-btn
-          v-for="element in data.menu"
-          :icon="element.icon"
-          :color="data.info.primaryColor"
+          v-for="(cat, index) in data.menu"
+          :key="cat.name"
+          class="mb-2"
+          block
+          :color="selectedIndex === index ? data.info.primaryColor : 'grey-lighten-3'"
+          @click="selectedIndex = index"
+        >
+          <v-icon start>{{ cat.icon }}</v-icon>
+          {{ cat.name }}
+        </v-btn>
+
+        <v-divider class="my-4" />
+
+        <AllergenFilter
+          :allergens="allAllergens"
+          v-model="selectedAllergens"
         />
-        <br />
-      </div>
+      </v-card>
     </v-col>
-    <v-col cols="9">
-      <div :class="{
-        'pb-10': true,
-        'menu-container-desktop': !isMobile,
-        'menu-container-mobile': isMobile
-      }">
-        <div v-for="element in data.menu">
+
+    <v-col cols="12" md="9">
+        <div v-if="filteredItems.length" :key="selectedIndex">
           <v-sheet
-            class="mt-10 mr-8 mb-3 category-sheet"
-            :style="{ backgroundImage: `url(${element.image})` }"
+            class="category-header mb-6"
+            height="180"
+            elevation="3"
+            :style="{ backgroundImage: `url(${currentCategory.image})` }"
           >
-            <h2>{{ element.name }}</h2>
+            <div class="category-overlay">
+              <h2 class="text-h4 font-weight-bold">{{ currentCategory.name }}</h2>
+            </div>
           </v-sheet>
-          <v-sheet
-            v-for="item in element.items"
-            color="transparent"
-            class="mt-2 mr-10 ml-2"
-          >
-            <h4>
-              {{ item.name }}
-              <span style="float: right;">{{ item.price }} €</span>
-            </h4>
-            <p>{{ item.description }}</p>
-          </v-sheet>
+
+          <v-row>
+            <v-col v-for="item in filteredItems" :key="item.name" cols="12" sm="6" md="4">
+              <v-card class="mb-4" elevation="2">
+                <v-card-title class="d-flex justify-space-between">
+                  <span class="font-weight-bold">{{ item.name }}</span>
+                  <span class="text-primary">{{ item.price }} €</span>
+                </v-card-title>
+                <v-card-text class="text-grey-darken-1 text-truncate">
+                  {{ item.description }}
+                </v-card-text>
+                <AllergenChips :allergens="item.allergens"/>
+              </v-card>
+            </v-col>
+          </v-row>
         </div>
-      </div>
+        <div v-else class="text-center mt-10">
+          <v-icon size="64" color="grey">mdi-food-off</v-icon>
+          <div class="mt-2 text-grey">Nessun elemento corrisponde ai filtri.</div>
+        </div>
     </v-col>
   </v-row>
 </template>
 
 <script setup>
-import { useMobileUtils } from '@/utils/mobile';
+import { ref, computed } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useDataStore } from '@/stores/data';
+import AllergenChips from '@/components/menu/AllergenChips.vue';
+import AllergenFilter from '@/components/menu/AllergenFilter.vue';
+
 
 const dataStore = useDataStore();
 const { data } = storeToRefs(dataStore);
-const { isMobile } = useMobileUtils();
+
+const selectedIndex = ref(0);
+const selectedAllergens = ref([]);
+
+const allAllergens = computed(() => {
+  const allergensSet = new Set();
+  data.value.menu.forEach(cat => {
+    cat.items?.forEach(item => {
+      item.allergens?.forEach(a => allergensSet.add(a));
+    });
+  });
+  return [...allergensSet];
+});
+
+const currentCategory = computed(() => data.value.menu[selectedIndex.value]);
+
+const filteredItems = computed(() => {
+  if (!currentCategory.value) return [];
+
+  return currentCategory.value.items.filter(item => {
+    const noAllergenConflict = selectedAllergens.value.every(
+      allergen => !item.allergens?.includes(allergen)
+    );
+
+    return noAllergenConflict;
+  });
+});
 </script>
 
 <style scoped>
-.icons-container {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.filters-container {
+  padding-right: 1rem;
 }
 
-.menu-container-desktop {
-  height: 80vh;
-  overflow-y: auto;
-}
-
-.menu-container-mobile {
-  height: 90vh;
-  overflow-y: auto;
-}
-
-.category-sheet {
-  height: 50px;
-  border-radius: 10px;
-  padding: 10px;
+.category-header {
+  background-size: cover;
   background-position: center;
-  color: white
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.category-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 </style>
