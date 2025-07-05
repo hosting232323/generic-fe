@@ -42,13 +42,13 @@
 </template>
 
 <script setup>
-import mobile from '@/utils/mobile';
+import { useMobileUtils } from '@/utils/mobile';
 import { storeToRefs } from 'pinia';
 import { useDataStore } from '@/stores/data';
 
 const dataStore = useDataStore();
 const { data } = storeToRefs(dataStore);
-const isMobile = mobile.setupMobileUtils();
+const { isMobile } = useMobileUtils();
 </script>
 
 <style scoped>
