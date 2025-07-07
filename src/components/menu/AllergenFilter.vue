@@ -18,7 +18,6 @@
 </template>
 
 <script setup>
-import { defineEmits } from 'vue';
 import { allergenIcons, formatAllergenName } from '@/utils/allergens';
 
 const props = defineProps({
