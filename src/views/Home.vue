@@ -51,4 +51,11 @@ const sections = computed(() => {
     return true;
   });
 });
+
+useHead({
+  title: 'Home Page',
+  meta: [
+    { name: 'Carpediem', content: 'This is the home page' }
+  ]
+});
 </script>
