@@ -56,7 +56,7 @@ const sections = computed(() => {
 useHead({
   title: 'Home Page',
   meta: [
-    { name: 'Fast Site', content: 'This is the home page' }
+    { name: 'Carpediem', content: 'This is the home page' }
   ]
 });
 </script>
