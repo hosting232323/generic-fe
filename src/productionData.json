@@ -3,15 +3,9 @@
     {
       "content": {
         "images": [
-          {
-            "desktop": "gallery/3.jpeg",
-            "mobile": "gallery/7.jpeg"
-          },
-          "gallery/1.jpeg",
-          "gallery/2.jpeg",
-          "gallery/5.jpeg",
-          "gallery/4.jpeg",
-          "gallery/6.jpeg"
+          "gallery/1.jpg",
+          "gallery/2.jpg",
+          "gallery/3.jpg"
         ],
         "type": "automatic"
       },
@@ -28,13 +22,13 @@
       "content": {
         "advantages": [
           {
-            "description": "Da Enoteca DiVinBacco, si pone grande attenzione alla selezione dei prodotti, dando priorità alle realtà presenti sul territorio locale e nazionale. Scegliamo Aziende che puntano sull' eccellenza del risultato, all'autenticità del processo e sulla sostenibilità. L'obiettivo è portare sulla tavola dei nostri clienti, non solo gusto e raffinatezza ma viaggi sensoriali che abbiano anche un ottimo rapporto qualità-prezzo, promuovendo una cultura del vino che valorizza la sostanza più che l'apparenza.",
-            "image": "advantages/2.png",
+            "description": "Presso CarpeDiem Bisceglie, offriamo una vasta selezione di calzature per bambini e teenager, garantendo qualità e comfort per ogni età.",
+            "image": "advantages/1.jpg",
             "name": "<strong>Il Nostro Assortimento</strong>"
           },
           {
-            "description": "Forniamo consulenza personalizzata per aiutare i clienti a scegliere i prodotti più adatti alle loro esigenze, promuovendo una relazione di fiducia e fedeltà.",
-            "image": "advantages/3.png",
+            "description": "Il nostro team esperto è sempre disponibile per offrire consigli personalizzati, aiutandoti a scegliere le scarpe più adatte alle esigenze del tuo bambino o teenager.",
+            "image": "advantages/2.jpg",
             "name": "<strong>Consulenza Personalizzata</strong>"
           }
         ]
@@ -77,21 +71,7 @@
     "iva": "",
     "logo": "logo.png",
     "name": "Carpediem",
-    "primaryColor": "#000000",
-    "secondaryColor": "#B22222",
-    "socialBubbles": [
-      {
-        "icon": "mdi-whatsapp",
-        "url": "https://wa.me/393784116186"
-      },
-      {
-        "icon": "mdi-instagram",
-        "url": "https://www.instagram.com/enoteca_divinbacco_bisceglie"
-      },
-      {
-        "icon": "mdi-facebook",
-        "url": "https://www.facebook.com/DivinbaccoEnoteca"
-      }
-    ]
+    "primaryColor": "#416342",
+    "secondaryColor": "#9CAF88"
   }
 }
