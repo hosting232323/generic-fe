@@ -132,31 +132,29 @@
       {
         "name": "Margherita",
         "description": "Pomodoro San Marzano, mozzarella fior di latte, basilico",
+        "image": "/menu/pizza_margherita.png",
         "price": 7,
         "allergens": ["glutine", "lattosio"]
       },
       {
         "name": "Marinara",
         "description": "Pomodoro, aglio fresco, origano e olio EVO",
+        "image": "/menu/pizza_marinara.png",
         "price": 6,
         "allergens": ["glutine"]
       },
       {
         "name": "Diavola",
         "description": "Mozzarella, salame piccante, pomodoro",
+        "image": "/menu/pizza_diavola.png",
         "price": 8,
         "allergens": ["glutine", "lattosio"]
       },
       {
         "name": "Capricciosa",
         "description": "Mozzarella, prosciutto, funghi, carciofi e olive",
+        "image": "/menu/pizza_capricciosa.png",
         "price": 9,
-        "allergens": ["glutine", "lattosio"]
-      },
-      {
-        "name": "Quattro Stagioni",
-        "description": "Pizza divisa in 4 gusti con mozzarella, funghi, carciofi, prosciutto e olive",
-        "price": 10,
         "allergens": ["glutine", "lattosio"]
       }
     ]

@@ -38,16 +38,23 @@
           </v-sheet>
 
           <v-row>
-            <v-col v-for="item in filteredItems" :key="item.name" cols="12" sm="6" md="4">
+            <v-col v-for="item in filteredItems" :key="item.name" cols="12" md="5">
               <v-card class="mb-4" elevation="2">
-                <v-card-title class="d-flex justify-space-between">
-                  <span class="font-weight-bold">{{ item.name }}</span>
-                  <span class="text-primary">{{ item.price }} €</span>
-                </v-card-title>
-                <v-card-text class="text-grey-darken-1 text-truncate">
-                  {{ item.description }}
-                </v-card-text>
-                <AllergenChips :allergens="item.allergens"/>
+                <v-row no-gutters>
+                  <v-col cols="4" class="d-flex align-center justify-center">
+                    <v-img :src="item.image" aspect-ratio="1" class="rounded-l" ></v-img>
+                  </v-col>
+                  <v-col cols="8">
+                    <v-card-title class="d-flex justify-space-between">
+                      <span class="font-weight-bold">{{ item.name }}</span>
+                      <span class="text-primary">{{ item.price }} €</span>
+                    </v-card-title>
+                    <v-card-text class="text-grey-darken-1">
+                      {{ item.description }}
+                    </v-card-text>
+                    <AllergenChips :allergens="item.allergens" />
+                  </v-col>
+                </v-row>
               </v-card>
             </v-col>
           </v-row>
