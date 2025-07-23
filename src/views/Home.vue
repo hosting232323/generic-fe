@@ -9,6 +9,7 @@
 </template>
 
 <script setup>
+import { useHead } from '@vueuse/head';
 import { computed } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useDataStore } from '@/stores/data';

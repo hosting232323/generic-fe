@@ -24,17 +24,34 @@
           {
             "description": "Presso CarpeDiem Bisceglie, offriamo una vasta selezione di calzature per bambini e teenager, garantendo qualità e comfort per ogni età.",
             "image": "advantages/1.jpg",
-            "name": "<strong>Il Nostro Assortimento</strong>"
+            "name": "<strong>Biomecanics</strong>"
           },
           {
             "description": "Il nostro team esperto è sempre disponibile per offrire consigli personalizzati, aiutandoti a scegliere le scarpe più adatte alle esigenze del tuo bambino o teenager.",
             "image": "advantages/2.jpg",
-            "name": "<strong>Consulenza Personalizzata</strong>"
+            "name": "<strong>Naturalworldeco</strong>"
+          },
+          {
+            "description": "Il nostro team esperto è sempre disponibile per offrire consigli personalizzati, aiutandoti a scegliere le scarpe più adatte alle esigenze del tuo bambino o teenager.",
+            "image": "advantages/2.jpg",
+            "name": "<strong>Shopart/garvalin</strong>"
           }
         ]
       },
       "menu": "Vantaggi",
       "type": "services"
+    },
+    {
+      "content": {
+        "brands": [
+          "brandlist/adidas.png",
+          "brandlist/nike.png",
+          "brandlist/gaelle.jpg",
+          "brandlist/levis.png"
+        ]
+      },
+      "menu": "Brandlist",
+      "type": "brandlist"
     },
     {
       "content": {
