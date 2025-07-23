@@ -6,9 +6,20 @@
         <v-expansion-panel-title>
           <b v-html="getText(service.name)"/>
         </v-expansion-panel-title>
-        <v-expansion-panel-text>
-          <div v-html="getText(service.description)" />
-        </v-expansion-panel-text>
+
+          <v-row align="stretch" class="d-flex">
+            <v-col cols="12" md="6" class="d-flex">
+              <img
+                v-if="service.image"
+                :src="resolveImg(service.image)"
+                alt=""
+                class="service-img"
+              />
+            </v-col>
+            <v-col cols="12" md="6" class="d-flex justify-center align-center">
+              <div v-html="getText(service.description)" />
+            </v-col>
+          </v-row>
       </v-expansion-panel>
     </v-expansion-panels>
   </v-container>
@@ -16,6 +27,7 @@
 
 <script setup>
 import { useLanguageStore } from '@/stores/language';
+import { resolveImg } from '@/utils/mobile';
 
 const { getText } = useLanguageStore();
 const { content, info } = defineProps(['content', 'info']);
