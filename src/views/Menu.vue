@@ -1,70 +1,71 @@
 <template>
-  <v-row>
-    <v-col cols="12" md="3" class="filters-container">
-      <v-card class="pa-4" elevation="2">
-        <h3 class="text-h6 font-weight-bold mb-2">Categorie</h3>
-        <v-btn
-          v-for="(cat, index) in data.menu"
-          :key="cat.name"
-          class="mb-2"
-          block
-          :color="selectedIndex === index ? data.info.primaryColor : 'grey-lighten-3'"
-          @click="selectedIndex = index"
-        >
-          <v-icon start>{{ cat.icon }}</v-icon>
-          {{ cat.name }}
-        </v-btn>
-
-        <v-divider class="my-4" />
-
-        <AllergenFilter
-          :allergens="allAllergens"
-          v-model="selectedAllergens"
-        />
-      </v-card>
-    </v-col>
-
-    <v-col cols="12" md="9">
-        <div v-if="filteredItems.length" :key="selectedIndex">
-          <v-sheet
-            class="category-header mb-6"
-            height="180"
-            elevation="3"
-            :style="{ backgroundImage: `url(${currentCategory.image})` }"
+  <v-container>
+    <v-row>
+      <v-col cols="12" md="3" class="filters-container">
+        <v-card class="pa-4" elevation="2">
+          <h3 class="text-h6 font-weight-bold mb-2">Categorie</h3>
+          <v-btn
+            v-for="(cat, index) in data.menu"
+            :key="cat.name"
+            class="mb-2"
+            block
+            :color="selectedIndex === index ? data.info.primaryColor : 'grey-lighten-3'"
+            @click="selectedIndex = index"
           >
-            <div class="category-overlay">
-              <h2 class="text-h4 font-weight-bold">{{ currentCategory.name }}</h2>
-            </div>
-          </v-sheet>
+            <v-icon start>{{ cat.icon }}</v-icon>
+            {{ cat.name }}
+          </v-btn>
 
-          <v-row>
-            <v-col v-for="item in filteredItems" :key="item.name" cols="12" md="5">
-              <v-card class="mb-4" elevation="2">
-                <v-row no-gutters>
-                  <v-col cols="4" class="d-flex align-center justify-center">
-                    <v-img :src="item.image" aspect-ratio="1" class="rounded-l" ></v-img>
-                  </v-col>
-                  <v-col cols="8">
-                    <v-card-title class="d-flex justify-space-between">
-                      <span class="font-weight-bold">{{ item.name }}</span>
-                      <span class="text-primary">{{ item.price }} €</span>
-                    </v-card-title>
-                    <v-card-text class="text-grey-darken-1">
-                      {{ item.description }}
-                    </v-card-text>
-                    <AllergenChips :allergens="item.allergens" />
-                  </v-col>
-                </v-row>
-              </v-card>
-            </v-col>
-          </v-row>
-        </div>
-        <div v-else class="text-center mt-10">
-          <v-icon size="64" color="grey">mdi-food-off</v-icon>
-          <div class="mt-2 text-grey">Nessun elemento corrisponde ai filtri.</div>
-        </div>
-    </v-col>
-  </v-row>
+          <v-divider class="my-4" />
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="9">
+          <div v-if="filteredItems.length" :key="selectedIndex">
+            <v-sheet
+              class="category-header mb-6"
+              height="180"
+              elevation="3"
+              :style="{ backgroundImage: `url(${currentCategory.image})` }"
+            >
+              <div class="category-overlay">
+                <h2 class="text-h4 font-weight-bold">{{ currentCategory.name }}</h2>
+              </div>
+            </v-sheet>
+
+            <v-row>
+              <v-col v-for="item in filteredItems" :key="item.name" cols="12" md="6">
+                <v-card class="mb-4" elevation="2">
+                  <v-row no-gutters>
+                    <v-col cols="4" class="d-flex align-center justify-center">
+                      <v-img :src="item.image" aspect-ratio="1" class="rounded-l" ></v-img>
+                    </v-col>
+                    <v-col cols="8">
+                      <v-card-title class="d-flex justify-space-between">
+                        <span class="font-weight-bold">{{ item.name }}</span>
+                        <span class="text-primary">{{ item.price }} €</span>
+                      </v-card-title>
+                      <v-card-text class="text-grey-darken-1">
+                        {{ item.description }}
+                      </v-card-text>
+                      <AllergenChips :allergens="item.allergens" />
+                    </v-col>
+                  </v-row>
+                </v-card>
+              </v-col>
+            </v-row>
+          </div>
+          <div v-else class="text-center mt-10">
+            <v-icon size="64" color="grey">mdi-food-off</v-icon>
+            <div class="mt-2 text-grey">Nessun elemento corrisponde ai filtri.</div>
+          </div>
+      </v-col>
+    </v-row>
+  </v-container>
+  <AllergenFab
+    v-model="selectedAllergens"
+    :allergens="allAllergens"
+  />
 </template>
 
 <script setup>
@@ -72,8 +73,7 @@ import { ref, computed } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useDataStore } from '@/stores/data';
 import AllergenChips from '@/components/menu/AllergenChips.vue';
-import AllergenFilter from '@/components/menu/AllergenFilter.vue';
-
+import AllergenFab from '@/components/menu/AllergenFab.vue'
 
 const dataStore = useDataStore();
 const { data } = storeToRefs(dataStore);
