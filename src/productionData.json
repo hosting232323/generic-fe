@@ -13,33 +13,70 @@
     },
     {
       "content": {
-        "text": "Benvenuti da Enoteca DiVinBacco, un luogo dove la passione per il vino si unisce all'esperienza. Guidati da Antonella e Isabella (con 25 anni nel settore) sarete portati ad una scelta di vini consigliati e personalizzati. Ogni cliente è parte integrante del loro lavoro e delle loro scelte. Ogni bottiglia racconta una storia e ogni consiglio nasce dall'ascolto. Vieni a scoprire il gusto della tradizione nazionale e internazionale su misura per te."
+        "description": "Dal 2001 Carpe Diem è cresciuta da semplice negozio di calzature a realtà specializzata nel mondo dei bambini. Ci siamo dedicati al “primo passo”, offrendo scarpe studiate per accompagnare i più piccoli nella loro crescita. Con gli anni abbiamo ampliato la gamma, abbracciato il mondo vegan e sostenibile, e reso la qualità il nostro punto fermo.",
+        "image": "gallery/2.jpg",
+        "orientationDesktop": "right",
+        "orientationMobile": "top",
+        "title": "La nostra storia"
       },
-      "menu": "Chi Siamo",
-      "type": "text"
+      "type": "dualSection"
     },
     {
       "content": {
+        "button": "Vai al menu!",
+        "description": "Crediamo che ogni passo conti. Scegliamo calzature che uniscono stile, funzionalità e comfort, con un’attenzione speciale all’ambiente e alla personalizzazione. Con passione e creatività, accompagniamo ogni famiglia nella scelta giusta, trasformando ogni scarpa in un piccolo gesto d’amore.",
+        "image": "gallery/1.jpg",
+        "orientationDesktop": "left",
+        "orientationMobile": "top",
+        "title": "La nostra visione"
+      },
+      "type": "dualSection"
+    },
+    {
+      "content": {
+        "title": "Il nostro assortimento",
+        "advantages": [
+          {
+            "description": "Ogni piede è diverso, <span style=\"color: #416342; font-weight: bold;\">ogni bambino ha le sue esigenze</span>.<br>Ecco perché offriamo una <span style=\"color: #416342; font-weight: bold;\">consulenza personalizzata in negozio</span>, guidata da <span style=\"color: #416342; font-weight: bold;\">anni di esperienza</span> e da una <span style=\"color: #416342; font-weight: bold;\">conoscenza approfondita</span> dei materiali, delle forme e delle funzionalità di ogni scarpa.<br><br>Che si tratti di <span style=\"color: #416342; font-weight: bold;\">primi passi</span>, <span style=\"color: #416342; font-weight: bold;\">piedini delicati</span> o semplicemente <span style=\"color: #416342; font-weight: bold;\">esigenze particolari</span>, siamo qui per aiutarti a scegliere il <span style=\"color: #416342; font-weight: bold;\">modello giusto</span>, senza fretta e con tutta la disponibilità possibile.<br><br><span style=\"color: #416342; font-weight: bold;\">Carpe Diem non è solo un punto vendita</span>: è <span style=\"color: #416342; font-weight: bold;\">un luogo di fiducia</span>.",
+            "image": [
+              "gallery/1.jpg",
+              "gallery/2.jpg",
+              "gallery/3.jpg"
+              
+            ],
+            "name": ""
+          }
+        ]
+      },
+      "menu": "Cosa Facciamo",
+      "type": "advantages"
+    },
+    {
+      "content": {
+        "title": "?",
         "services": [
           {
-            "description": "Presso CarpeDiem Bisceglie, offriamo una vasta selezione di calzature per bambini e teenager, garantendo qualità e comfort per ogni età.",
+            "description": "Progettate in collaborazione con il <span style=\"color: #416342; font-weight: bold;\">Collegio Ufficiale dei Podologi di Spagna</span>, le scarpe Biomecanics supportano <span style=\"color: #416342; font-weight: bold;\">ogni fase dello sviluppo del piede</span>, offrendo <span style=\"color: #416342; font-weight: bold;\">libertà di movimento</span>, <span style=\"color: #416342; font-weight: bold;\">stabilità</span> e <span style=\"color: #416342; font-weight: bold;\">sicurezza</span>. Ideali per i <span style=\"color: #416342; font-weight: bold;\">primi passi</span>.",
             "image": "advantages/1.jpg",
             "name": "<strong>Biomecanics</strong>"
           },
           {
-            "description": "Il nostro team esperto è sempre disponibile per offrire consigli personalizzati, aiutandoti a scegliere le scarpe più adatte alle esigenze del tuo bambino o teenager.",
+            "description": "Una <span style=\"color: #416342; font-weight: bold;\">scelta etica</span>, <span style=\"color: #416342; font-weight: bold;\">100% naturale</span>. Scarpe prodotte in Spagna con <span style=\"color: #416342; font-weight: bold;\">cotone organico</span>, <span style=\"color: #416342; font-weight: bold;\">colori enzimatici</span> e materiali <span style=\"color: #416342; font-weight: bold;\">completamente vegan</span>. Per <span style=\"color: #416342; font-weight: bold;\">bambini e genitori attenti all’ambiente</span> e alla salute.",
             "image": "advantages/2.jpg",
-            "name": "<strong>Naturalworldeco</strong>"
+            "name": "<strong>Natural World Eco</strong>"
           },
           {
-            "description": "Il nostro team esperto è sempre disponibile per offrire consigli personalizzati, aiutandoti a scegliere le scarpe più adatte alle esigenze del tuo bambino o teenager.",
+            "description": "Brand dallo stile <span style=\"color: #416342; font-weight: bold;\">colorato</span>, <span style=\"color: #416342; font-weight: bold;\">dinamico</span> e <span style=\"color: #416342; font-weight: bold;\">contemporaneo</span>. Perfetti per chi cerca <span style=\"color: #416342; font-weight: bold;\">scarpe funzionali</span> ma con una <span style=\"color: #416342; font-weight: bold;\">personalità decisa</span>. Linee <span style=\"color: #416342; font-weight: bold;\">originali</span> che conquistano <span style=\"color: #416342; font-weight: bold;\">bambini e ragazzi</span>.",
             "image": "advantages/2.jpg",
-            "name": "<strong>Shopart/garvalin</strong>"
+            "name": "<strong>ShopArt / Garvalín</strong>"
           }
         ]
       },
       "menu": "Vantaggi",
       "type": "services"
+    },
+    {
+      "type": "line"
     },
     {
       "content": {
@@ -52,6 +89,9 @@
       },
       "menu": "Brandlist",
       "type": "brandlist"
+    },
+    {
+      "type": "line"
     },
     {
       "content": {
@@ -79,7 +119,7 @@
           "16.50320",
           "41.23951"
         ],
-        "zoom": 10
+        "zoom": 15
       },
       "type": "map"
     }
